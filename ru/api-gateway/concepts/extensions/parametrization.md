@@ -42,6 +42,9 @@ x-yc-apigateway:
         - "testing"
         - "dev"
       description: "API Gateway installation"
+    cloud-id:
+      default: "default"
+      description: "Your Cloud id"
 
 paths:
   /env/info:
@@ -54,3 +57,5 @@ paths:
         http_headers:
           Content-Type: text/plain
 ```
+
+> Значение переменной не может превышать 63 символа
